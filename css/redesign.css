@@ -167,7 +167,7 @@ button:focus-visible {
 /* Title block: a labelled grid, exactly like the corner of a drawing sheet */
 .titleblock {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
@@ -179,8 +179,8 @@ button:focus-visible {
   border-right: 1px solid var(--line);
   border-top: 1px solid var(--line);
 }
-.tb-cell:nth-child(-n+4) { border-top: none; }
-.tb-cell:nth-child(4n) { border-right: none; }
+.tb-cell:nth-child(-n+3) { border-top: none; }
+.tb-cell:nth-child(3n) { border-right: none; }
 
 .tb-label {
   display: block;
@@ -359,13 +359,50 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
   background: var(--line);
   border-radius: 2px;
 }
-.tl-item.is-current .tl-bar { background: var(--amber); }
+/* Only the item's own (outermost) bar reads "current" — scoped so it
+   doesn't bleed into a past position nested underneath it. */
+.tl-item.is-current > .tl-bar-track > .tl-bar { background: var(--amber); }
 
 .tl-item ul {
   margin: 0 0 .75rem;
   padding-left: 1.1rem;
 }
 .tl-item li { margin: 0 0 .35rem; }
+
+/* Positions held within one company — grouped the way LinkedIn groups
+   a promotion under a single employer. */
+.tl-item .tl-positions {
+  list-style: none;
+  margin: .3rem 0 .85rem;
+  padding: 0 0 0 1rem;
+  border-left: 1px dashed var(--rule);
+}
+.tl-item .tl-position {
+  margin: 0 0 .9rem;
+}
+.tl-item .tl-position:last-child { margin-bottom: 0; }
+.tl-position-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .3rem .9rem;
+}
+.tl-position-role {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: .95rem;
+  color: var(--ink);
+  margin: 0;
+}
+.tl-position-meta {
+  font-family: var(--mono);
+  font-size: .7rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.tl-position .tl-bar-track { max-width: 160px; height: 4px; margin: .35rem 0 0; }
+.tl-position.is-current .tl-bar { background: var(--amber); }
 .tl-item p.tl-loc {
   font-family: var(--mono);
   font-size: .74rem;
@@ -465,11 +502,10 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter); }
 
 @media (max-width: 560px) {
   .hero-inner { padding: 2.25rem 1.1rem 2rem; }
-  .titleblock { grid-template-columns: repeat(2, 1fr); }
-  .tb-cell:nth-child(-n+4) { border-top: 1px solid var(--line); }
-  .tb-cell:nth-child(1), .tb-cell:nth-child(2) { border-top: none; }
-  .tb-cell:nth-child(4n) { border-right: 1px solid var(--line); }
-  .tb-cell:nth-child(2n) { border-right: none; }
+  .titleblock { grid-template-columns: 1fr; }
+  .tb-cell:nth-child(-n+3) { border-top: 1px solid var(--line); }
+  .tb-cell:nth-child(1) { border-top: none; }
+  .tb-cell:nth-child(3n) { border-right: 1px solid var(--line); }
   .hero-top { flex-direction: column-reverse; }
   main, .page-footer { padding-left: 1.1rem; padding-right: 1.1rem; }
 }
