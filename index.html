@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
   <meta charset="utf-8">
@@ -9,14 +9,13 @@
 
   <title>Mohanakrishna Vanamala Hariprasad</title>
 
-  <!-- Google font typography settings - defined in _config.yml -->
-  
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'/>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <meta name="description" content="Resume, Projects and My Blogs">
+  <meta name="description" content="Résumé of Mohanakrishna Vanamala Hariprasad — Senior Software Engineer at Microsoft.">
 
-  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/redesign.css"/>
   <link rel="canonical" href="https://github.com/mohanakrishnavh"/>
   <link rel="icon" type="image/x-icon" href="/favicon.png" />
   </head>
@@ -24,475 +23,357 @@
 
   <body class="theme-default">
 
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
 
-      <header class="page-header">
+      <header class="hero">
+        <div class="hero-inner">
 
-        <!-- You can turn off the avatar in _config.yml by setting to false -->
-        
-        <img src="images/cna.jpg" alt="my photo" class="avatar no-print" itemprop="image">
-        
+          <div class="hero-top">
+            <h1 class="hero-name" itemprop="name">
+              <span>Mohanakrishna</span>
+              <span>Vanamala Hariprasad</span>
+            </h1>
 
-        <!-- Your name is defined in the _config.yml file -->
-        <h1 class="header-name" itemprop="name">Mohanakrishna Vanamala Hariprasad</h1>
-    
-        <!-- Contact buttons don't work in print, configure in the _config.yml file, remove "print-only" to display always. -->
-        <div class="header-contact-info" itemprop="contact-info">
-          <p>
-              <a href="https://github.com/mohanakrishnavh" class="icon-link" itemprop="url">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
-                  <path id="GitHub" fill-rule="evenodd" clip-rule="evenodd" fill="#D1CECC" d="M14.01,0C6.27,0-0.01,6.28-0.01,14.02
-                    c0,6.19,4.02,11.45,9.59,13.3c0.7,0.13,0.96-0.3,0.96-0.68c0-0.33-0.01-1.21-0.02-2.38c-3.9,0.85-4.72-1.88-4.72-1.88
-                    c-0.64-1.62-1.56-2.05-1.56-2.05c-1.27-0.87,0.1-0.85,0.1-0.85c1.41,0.1,2.15,1.44,2.15,1.44c1.25,2.14,3.28,1.52,4.08,1.16
-                    c0.13-0.91,0.49-1.52,0.89-1.87c-3.11-0.35-6.38-1.56-6.38-6.93c0-1.53,0.55-2.78,1.44-3.76C6.37,9.17,5.89,7.74,6.65,5.81
-                    c0,0,1.18-0.38,3.85,1.44c1.12-0.31,2.32-0.47,3.51-0.47c1.19,0.01,2.39,0.16,3.51,0.47c2.68-1.81,3.85-1.44,3.85-1.44
-                    c0.76,1.93,0.28,3.35,0.14,3.71c0.9,0.98,1.44,2.23,1.44,3.76c0,5.38-3.28,6.57-6.4,6.92c0.5,0.43,0.95,1.29,0.95,2.6
-                    c0,1.87-0.02,3.39-0.02,3.84c0,0.37,0.25,0.81,0.96,0.67c5.56-1.86,9.58-7.11,9.58-13.3C28.03,6.28,21.75,0,14.01,0z"/>
+            <div class="hero-portrait no-print">
+              <img src="images/linkedin-avatar.jpg" alt="Mohanakrishna Vanamala Hariprasad" itemprop="image">
+            </div>
+          </div>
 
-                </svg> 
-              </a>
+          <div class="titleblock" role="group" aria-label="Profile summary">
+            <div class="tb-cell">
+              <span class="tb-label">Role</span>
+              <span class="tb-value" itemprop="jobTitle">Senior Software&nbsp;Engineer</span>
+            </div>
+            <div class="tb-cell" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+              <span class="tb-label">Company</span>
+              <span class="tb-value" itemprop="name">Microsoft</span>
+            </div>
+            <div class="tb-cell">
+              <span class="tb-label">Location</span>
+              <span class="tb-value">Redmond, WA</span>
+            </div>
+          </div>
 
-              <a href="https://www.linkedin.com/in/mohanakrishnavh" class="icon-link" itemprop="url">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
-                  <path id="LinkedIn" fill="#D1CECC" d="M18.82,15.09v3.61h-2.09v-3.37c0-0.85-0.3-1.42-1.06-1.42c-0.58,0-0.92,0.39-1.07,0.77
-                    c-0.06,0.13-0.07,0.32-0.07,0.51v3.52h-2.09c0,0,0.03-5.71,0-6.3h2.09v0.89c0,0.01-0.01,0.01-0.01,0.02h0.01V13.3
-                    c0.28-0.43,0.77-1.04,1.89-1.04C17.79,12.25,18.82,13.16,18.82,15.09z M9.18,18.7h2.09v-6.3H9.18V18.7z M10.24,9.36
-                    c-0.72,0-1.19,0.47-1.19,1.09c0,0.61,0.45,1.09,1.16,1.09h0.01c0.73,0,1.18-0.48,1.18-1.09C11.39,9.84,10.95,9.36,10.24,9.36z
-                     M28,14c0,7.73-6.27,14-14,14S0,21.73,0,14S6.27,0,14,0S28,6.27,28,14z M20.93,8.02c0-0.55-0.46-1-1.02-1H8.09
-                    c-0.57,0-1.02,0.45-1.02,1v11.96c0,0.55,0.46,1,1.02,1h11.82c0.57,0,1.02-0.45,1.02-1V8.02z"/>
-                </svg>
-              </a>
-          </p>
-        </div>
-
-
-          <!-- Your title is also defined in the _config.yml file -->
-        
-
-       <header class="section-header">
-          <h2>Senior Software Engineer at Microsoft</h2>
-        </header>
-
-
-          <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
-          <!-- and guess where these are defined? Yup, you guessed it: the _config.yml file -->
-
-    <ul class="icon-links">
-
-    <!-- GitHub link -->
-  
-     <!--  <li class="icon-link-item"><a href="https://github.com/mohanakrishnavh" class="icon-link" itemprop="url"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
-    <path id="GitHub" fill-rule="evenodd" clip-rule="evenodd" fill="#D1CECC" d="M14.01,0C6.27,0-0.01,6.28-0.01,14.02
-      c0,6.19,4.02,11.45,9.59,13.3c0.7,0.13,0.96-0.3,0.96-0.68c0-0.33-0.01-1.21-0.02-2.38c-3.9,0.85-4.72-1.88-4.72-1.88
-      c-0.64-1.62-1.56-2.05-1.56-2.05c-1.27-0.87,0.1-0.85,0.1-0.85c1.41,0.1,2.15,1.44,2.15,1.44c1.25,2.14,3.28,1.52,4.08,1.16
-      c0.13-0.91,0.49-1.52,0.89-1.87c-3.11-0.35-6.38-1.56-6.38-6.93c0-1.53,0.55-2.78,1.44-3.76C6.37,9.17,5.89,7.74,6.65,5.81
-      c0,0,1.18-0.38,3.85,1.44c1.12-0.31,2.32-0.47,3.51-0.47c1.19,0.01,2.39,0.16,3.51,0.47c2.68-1.81,3.85-1.44,3.85-1.44
-      c0.76,1.93,0.28,3.35,0.14,3.71c0.9,0.98,1.44,2.23,1.44,3.76c0,5.38-3.28,6.57-6.4,6.92c0.5,0.43,0.95,1.29,0.95,2.6
-      c0,1.87-0.02,3.39-0.02,3.84c0,0.37,0.25,0.81,0.96,0.67c5.56-1.86,9.58-7.11,9.58-13.3C28.03,6.28,21.75,0,14.01,0z"/>
-    </svg>
-    </a></li> -->
-  
-
-  <!-- Twitter link -->
-  
-
-  <!-- Dribbble link -->
-  
-
-  <!-- Facebook link -->
-  
-
-  <!-- LinkedIn link -->
-  
-  <!-- <li class="icon-link-item"><a href="https://www.linkedin.com/in/mohanakrishnavh" class="icon-link" itemprop="url"><svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-   viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve" width="28">
-<path id="LinkedIn" fill="#D1CECC" d="M18.82,15.09v3.61h-2.09v-3.37c0-0.85-0.3-1.42-1.06-1.42c-0.58,0-0.92,0.39-1.07,0.77
-  c-0.06,0.13-0.07,0.32-0.07,0.51v3.52h-2.09c0,0,0.03-5.71,0-6.3h2.09v0.89c0,0.01-0.01,0.01-0.01,0.02h0.01V13.3
-  c0.28-0.43,0.77-1.04,1.89-1.04C17.79,12.25,18.82,13.16,18.82,15.09z M9.18,18.7h2.09v-6.3H9.18V18.7z M10.24,9.36
-  c-0.72,0-1.19,0.47-1.19,1.09c0,0.61,0.45,1.09,1.16,1.09h0.01c0.73,0,1.18-0.48,1.18-1.09C11.39,9.84,10.95,9.36,10.24,9.36z
-   M28,14c0,7.73-6.27,14-14,14S0,21.73,0,14S6.27,0,14,0S28,6.27,28,14z M20.93,8.02c0-0.55-0.46-1-1.02-1H8.09
-  c-0.57,0-1.02,0.45-1.02,1v11.96c0,0.55,0.46,1,1.02,1h11.82c0.57,0,1.02-0.45,1.02-1V8.02z"/>
-</svg>
-</a></li> -->
-  
-
-  <!-- Instagram link -->
-  
-
-  <!-- Website link -->
-  
-
-</ul>
-
+          <div class="hero-links no-print">
+            <a href="https://github.com/mohanakrishnavh" class="hero-link" itemprop="url">
+              <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14.01,0C6.27,0-0.01,6.28-0.01,14.02c0,6.19,4.02,11.45,9.59,13.3c0.7,0.13,0.96-0.3,0.96-0.68c0-0.33-0.01-1.21-0.02-2.38c-3.9,0.85-4.72-1.88-4.72-1.88c-0.64-1.62-1.56-2.05-1.56-2.05c-1.27-0.87,0.1-0.85,0.1-0.85c1.41,0.1,2.15,1.44,2.15,1.44c1.25,2.14,3.28,1.52,4.08,1.16c0.13-0.91,0.49-1.52,0.89-1.87c-3.11-0.35-6.38-1.56-6.38-6.93c0-1.53,0.55-2.78,1.44-3.76C6.37,9.17,5.89,7.74,6.65,5.81c0,0,1.18-0.38,3.85,1.44c1.12-0.31,2.32-0.47,3.51-0.47c1.19,0.01,2.39,0.16,3.51,0.47c2.68-1.81,3.85-1.44,3.85-1.44c0.76,1.93,0.28,3.35,0.14,3.71c0.9,0.98,1.44,2.23,1.44,3.76c0,5.38-3.28,6.57-6.4,6.92c0.5,0.43,0.95,1.29,0.95,2.6c0,1.87-0.02,3.39-0.02,3.84c0,0.37,0.25,0.81,0.96,0.67c5.56-1.86,9.58-7.11,9.58-13.3C28.03,6.28,21.75,0,14.01,0z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/mohanakrishnavh" class="hero-link" itemprop="sameAs">
+              <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M18.82,15.09v3.61h-2.09v-3.37c0-0.85-0.3-1.42-1.06-1.42c-0.58,0-0.92,0.39-1.07,0.77c-0.06,0.13-0.07,0.32-0.07,0.51v3.52h-2.09c0,0,0.03-5.71,0-6.3h2.09v0.89c0,0.01-0.01,0.01-0.01,0.02h0.01V13.3c0.28-0.43,0.77-1.04,1.89-1.04C17.79,12.25,18.82,13.16,18.82,15.09z M9.18,18.7h2.09v-6.3H9.18V18.7z M10.24,9.36c-0.72,0-1.19,0.47-1.19,1.09c0,0.61,0.45,1.09,1.16,1.09h0.01c0.73,0,1.18-0.48,1.18-1.09C11.39,9.84,10.95,9.36,10.24,9.36z M28,14c0,7.73-6.27,14-14,14S0,21.73,0,14S6.27,0,14,0S28,6.27,28,14z M20.93,8.02c0-0.55-0.46-1-1.02-1H8.09c-0.57,0-1.02,0.45-1.02,1v11.96c0,0.55,0.46,1,1.02,1h11.82c0.57,0,1.02-0.45,1.02-1V8.02z"/></svg>
+              LinkedIn
+            </a>
+          </div>
 
         </div>
-
-        <div class="executive-summary no-print" itemprop="description">
-          <p>I am a Senior Software Engineer at Microsoft, based in Redmond, WA, with over a decade of experience building large-scale, distributed software systems across Microsoft, Amazon, McDonald's, and Wayfair. </p>
-      <p> I enjoy designing scalable backend services and cloud-native architectures, and mentoring other engineers along the way. </p>
-      <p> I retain a strong interest in Machine Learning and Natural Language Processing, and enjoy applying those techniques to real-world engineering problems. </p>
-        </div>
-
-      
-        
-
       </header>
 
-     
-      <!-- begin Education -->
-      <section class="content-section">
+      <main id="main">
 
-        <header class="section-header">
-          <h2>Education</h2>
-        </header>
-        
+        <section class="summary" itemprop="description">
+          <p class="eyebrow">Summary</p>
+          <p class="lede">Senior Software Engineer at <b>Microsoft</b>, with over a decade building large-scale, distributed software systems across Microsoft, Amazon, McDonald&rsquo;s, and Wayfair.</p>
+          <p class="lede">I design scalable backend services and cloud-native architecture, mentor engineers, and still reach for Machine Learning and NLP when a problem calls for it.</p>
+        </section>
 
-        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">The University Of Texas At Dallas</h3>
-          <h4 class="resume-item-details" itemprop="description">Master's Degree, Computer and Information Sciences, General; 2016 &mdash; 2018</h4>
+        <!-- begin Experience -->
+        <section class="content-section">
+          <div class="section-header"><h2>Experience</h2><span class="rule" aria-hidden="true"></span></div>
 
+          <ol class="timeline">
 
-       <p class="resume-item-copy"><b>Coursework :</b> Machine Learning, Database Design, Statistical Methods for Data Science, Web Programming Languages, Design & Analysis of Algorithm, Software Project Planning & Management, Artificial Intelligence, Big Data</p>
-       <p class="resume-item-copy">Activities : CS Outreach Instructor, Data Science Club. </p>
-        </div>
+            <li class="tl-item is-current" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <div class="tl-head">
+                <h3 class="tl-org" itemprop="name">Microsoft</h3>
+                <span class="tl-meta">Dec 2023 &mdash; Present &middot; 2 yr 10 mo</span>
+              </div>
+              <div class="tl-bar-track"><div class="tl-bar" style="width:100%"></div></div>
+              <p class="tl-loc">Redmond, Washington &middot; Hybrid</p>
 
-    <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science & Technology</h3>
-          <h4 class="resume-item-details" itemprop="description">Bachelor of Technology (B.Tech.), Computer Science; 2009 &mdash; 2013</h4>
+              <ul class="tl-positions">
+                <li class="tl-position is-current">
+                  <div class="tl-position-head">
+                    <p class="tl-position-role" itemprop="description">Senior Software Engineer</p>
+                    <span class="tl-position-meta">Mar 2025 &mdash; Present &middot; 1 yr 7 mo</span>
+                  </div>
+                  <div class="tl-bar-track"><div class="tl-bar" style="width:56%"></div></div>
+                </li>
+                <li class="tl-position">
+                  <div class="tl-position-head">
+                    <p class="tl-position-role">Software Engineer II</p>
+                    <span class="tl-position-meta">Dec 2023 &mdash; Mar 2025 &middot; 1 yr 4 mo</span>
+                  </div>
+                  <div class="tl-bar-track"><div class="tl-bar" style="width:47%"></div></div>
+                </li>
+              </ul>
+            </li>
 
-  <p class="resume-item-copy"><b>Coursework :</b> Data Structures & Algorithms, Operating Systems, Databases, Distributed computing, Software Engineering </p>
-         <p class="resume-item-copy"><b>Grade :</b> 8.56 / 10.0</p>
-         <p class="resume-item-copy"><b>Activities :</b>  President of Artificial Intelligence Club.</p>
-        </div>
-		
-		<div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Udacity</h3>
-          <h4 class="resume-item-details" itemprop="description">Machine Learning Nanodegree &mdash; December,2017</h4>
-        </div> 
+            <li class="tl-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <div class="tl-head">
+                <h3 class="tl-org" itemprop="name">Amazon</h3>
+                <span class="tl-meta">Sep 2022 &mdash; Nov 2023 &middot; 1 yr 3 mo</span>
+              </div>
+              <p class="tl-role" itemprop="description">Software Development Engineer II</p>
+              <div class="tl-bar-track"><div class="tl-bar" style="width:44%"></div></div>
+              <p class="tl-loc">Seattle, Washington &middot; Hybrid</p>
+              <ul>
+                <li>Designed, developed, implemented, tested, and documented large-scale, multi-tiered, distributed software applications, tools, systems, and services.</li>
+                <li>Translated functional requirements into robust, scalable, supportable solutions that work well within the overall system architecture.</li>
+                <li>Participated in the full development cycle, end-to-end, from design and implementation to testing, documentation, delivery, and maintenance.</li>
+                <li>Mentored junior development engineers.</li>
+              </ul>
+              <ul class="tag-row"><li class="tag">Java</li><li class="tag">AWS CDK</li></ul>
+            </li>
 
-		<div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">Coursera</h3>
-          <h4 class="resume-item-details" itemprop="description">Deep Learning Specialization &mdash; December,2017</h4>
-        </div>
+            <li class="tl-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <div class="tl-head">
+                <h3 class="tl-org" itemprop="name">McDonald&rsquo;s</h3>
+                <span class="tl-meta">Jun 2021 &mdash; Sep 2022 &middot; 1 yr 4 mo</span>
+              </div>
+              <p class="tl-role" itemprop="description">Software Engineer II</p>
+              <div class="tl-bar-track"><div class="tl-bar" style="width:47%"></div></div>
+              <ul>
+                <li>Designed, developed, and deployed Spring Boot-based microservices to McDonald&rsquo;s Global Mobile Application (GMA) as part of digital engineering initiatives.</li>
+                <li>Developed highly scalable, performant, and reliable cloud software solutions using Amazon Web Services (AWS).</li>
+                <li>Mentored other software developers to maintain architectural vision and software quality.</li>
+              </ul>
+              <ul class="tag-row"><li class="tag">Spring Boot</li><li class="tag">Java</li><li class="tag">AWS</li></ul>
+            </li>
 
-      </section>
-      <!-- end Education -->
-      
+            <li class="tl-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <div class="tl-head">
+                <h3 class="tl-org" itemprop="name">Wayfair</h3>
+                <span class="tl-meta">Feb 2019 &mdash; May 2021 &middot; 2 yr 4 mo</span>
+              </div>
+              <p class="tl-role" itemprop="description">Software Engineer</p>
+              <div class="tl-bar-track"><div class="tl-bar" style="width:82%"></div></div>
+              <p class="tl-loc">Greater Boston Area &middot; On-site</p>
+              <ul>
+                <li>Designed, developed, and integrated applications using Java, PHP, SQL, and React JS.</li>
+                <li>Designed, implemented, and documented microservices to expose data to internal teams, moving Wayfair towards a decoupled SOA-style architecture.</li>
+                <li>Partnered with product managers and business stakeholders to shape how thousands of suppliers communicate with Wayfair&rsquo;s catalog services, tools, and agents.</li>
+              </ul>
+              <ul class="tag-row"><li class="tag">Spring Boot</li><li class="tag">PHP</li><li class="tag">React</li></ul>
+            </li>
 
-      
-      <!-- begin Projects -->
-      <section class="content-section">
+            <li class="tl-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <div class="tl-head">
+                <h3 class="tl-org" itemprop="name">Micro Focus</h3>
+                <span class="tl-meta">Jun 2018 &mdash; Dec 2018 &middot; 7 mo</span>
+              </div>
+              <p class="tl-role" itemprop="description">SDE Intern (Graduate), Machine Learning</p>
+              <div class="tl-bar-track"><div class="tl-bar" style="width:21%"></div></div>
+              <p class="tl-loc">Fort Collins, Colorado &middot; On-site</p>
+              <ul>
+                <li>Extracted data from Micro Focus Operation Orchestration tools and server logs to build a dataset from scratch, then clustered workflows into sub-categories by step.</li>
+                <li>Applied supervised machine learning to classify workflows, reducing the workflow execution error rate by 3%.</li>
+              </ul>
+            </li>
 
-        <header class="section-header">
-          <h2>Projects</h2>
-        </header>
+            <li class="tl-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <div class="tl-head">
+                <h3 class="tl-org" itemprop="name">Toovio</h3>
+                <span class="tl-meta">Dec 2017 &mdash; Apr 2018 &middot; 5 mo</span>
+              </div>
+              <p class="tl-role" itemprop="description">Machine Learning Engineer Intern</p>
+              <div class="tl-bar-track"><div class="tl-bar" style="width:15%"></div></div>
+              <p class="tl-loc">Dallas&ndash;Fort Worth Metroplex &middot; Remote</p>
+              <ul>
+                <li>Developed an interactive dashboard for real-time sentiment analysis on tweets by customer-specific hashtags.</li>
+                <li>Improved an existing J48 decision tree model predicting customer offer acceptance by applying ensemble techniques.</li>
+              </ul>
+            </li>
 
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="https://github.com/mohanakrishnavh/Morris-Variant-D">Morris Variant D</a></h3>
-          <h4 class="resume-item-details"> Python &bull; Summer &mdash; 2017</h4>
-          <p class="resume-item-copy"> • Developed Morris Variant D, a variant of Nine Men Morris game in Python. </p>
-          <p class="resume-item-copy"> • Optimized the static estimation function to predict the best next move from the game tree up to n levels deeps. </p>
-          <p class="resume-item-copy"> • Pruned the game tree by Alpha-Beta pruning to reduce the game time by reducing the positions evaluated. </p>
-    
-        </div>
+            <li class="tl-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <div class="tl-head">
+                <h3 class="tl-org" itemprop="name">The University of Texas at Dallas</h3>
+                <span class="tl-meta">Sep 2017 &mdash; Dec 2017 &middot; 4 mo</span>
+              </div>
+              <p class="tl-role" itemprop="description">Grader</p>
+              <div class="tl-bar-track"><div class="tl-bar" style="width:12%"></div></div>
+              <ul>
+                <li>Graded assignments and exams, administered test proctoring, and gave the instructor feedback on student performance.</li>
+              </ul>
+            </li>
 
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="https://github.com/mohanakrishnavh/Soccer-Match-Prediction">Predicting Winner of Soccer Match</a></h3>
-          <h4 class="resume-item-details">Anaconda (Spyder), Python   &bull; Spring &mdash; 2017</h4>
-          <p class="resume-item-copy"> • Developed a predictive model to predict the winner of the soccer match in Spain LIGA BBVA. </p>
-          <p class="resume-item-copy"> • Performed data cleansing, identified the correlation between attributes and compared the accuracy achieved by classifiers such as Support Vector Machines(SVM), Naïve Bayes, Logistic Regression and K-Nearest neighbors. </p>
-          <p class="resume-item-copy"> • Achieved a prediction accuracy rate of 62.5%. </p>
-       </div>
+            <li class="tl-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <div class="tl-head">
+                <h3 class="tl-org" itemprop="name">The University of Texas at Dallas</h3>
+                <span class="tl-meta">Aug 2016 &mdash; Aug 2017 &middot; 1 yr 1 mo</span>
+              </div>
+              <p class="tl-role" itemprop="description">Instructor at CS Outreach</p>
+              <div class="tl-bar-track"><div class="tl-bar" style="width:38%"></div></div>
+              <ul>
+                <li>CS Outreach is a community service program by UT Dallas introducing programming to students and professionals; conducted coding workshops and camps in Scratch, Python, C++, HTML, CSS, and Java.</li>
+              </ul>
+            </li>
 
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="https://github.com/mohanakrishnavh/Text-Classification?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BAW5bRbvuRDiNR6%2FSjPIWZA%3D%3D">Text Classification</a></h3>
-          <h4 class="resume-item-details"> Anaconda (Spyder), Python &bull; Spring &mdash; 2017</h4>
-          <p class="resume-item-copy"> • Implemented Naive Bayes algorithm and Logistic Regression algorithm to classify the emails as ham or spam. </p>
-          <p class="resume-item-copy"> • Improved the accuracy by eliminating stop words. Accuracy: 95.18% </p>
+            <li class="tl-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+              <span class="tl-marker" aria-hidden="true"></span>
+              <div class="tl-head">
+                <h3 class="tl-org" itemprop="name">Wipro Technologies Ltd.</h3>
+                <span class="tl-meta">Nov 2013 &mdash; Jun 2016 &middot; 2 yr 8 mo</span>
+              </div>
+              <p class="tl-role" itemprop="description">Project Engineer</p>
+              <div class="tl-bar-track"><div class="tl-bar" style="width:94%"></div></div>
+              <p class="tl-loc">Chennai &middot; On-site</p>
+              <ul>
+                <li>Administered the MS SQL Server database environment &ndash; error logs, backup, recovery, SQL Agent jobs, SSL/PKI certificates, upgrades, and high availability.</li>
+                <li>Planned and coordinated the transition of database encryption from SSL certificates to Microsoft PKI across all SQL Server 2008/2008R2/2012 servers, then upgraded them all to SQL Server 2012.</li>
+                <li>Optimized database health-check scripts to deliver reports in half the time, and coordinated the team through disaster-recovery service restorations.</li>
+              </ul>
+            </li>
 
-        </div>
+          </ol>
+        </section>
+        <!-- end Experience -->
 
-      <div class="resume-item">
-          <h3 class="resume-item-title"><a href="https://github.com/mohanakrishnavh/K-Means-Clustering-for-Image-Compression">Image Compression</a></h3>
-          <h4 class="resume-item-details"> Java &bull; Spring &mdash; 2017</h4>
-          <p class="resume-item-copy"> • Used K-means Clustering technique to compress images and compared the compression rates for different values of K.
-</p>
-        </div>
-    
-            <div class="resume-item">
-          <h3 class="resume-item-title"><a href="https://github.com/mohanakrishnavh/Library-Management-System">Library Management System</a></h3>
-          <h4 class="resume-item-details"> Java, Swings, MySQL &bull; Spring &mdash; 2017</h4>
-          <p class="resume-item-copy"> • Built a MySQL based application designed from the perspective of a librarian. </p>
-          <p class="resume-item-copy"> • Implemented features: Borrower Management, Book Search & Availability, Book Loans and Fine Management. </p>
+        <!-- begin Education -->
+        <section class="content-section">
+          <div class="section-header"><h2>Education</h2><span class="rule" aria-hidden="true"></span></div>
 
-        </div>
-    
-    
-      <div class="resume-item">
-          <h3 class="resume-item-title"><a href="https://github.com/mohanakrishnavh/BiddingWebApplication">Bidding Web Application</a></h3>
-          <h4 class="resume-item-details">Java, JSP, MySQL, Bootstrap, Hibernate, oAuth, RESTful Web Services   &bull; Fall &mdash; 2016</h4>
-          <p class="resume-item-copy"> • Created an online auction and shopping website where people and businesses buy and sell a broad variety of goods and services
+          <div class="card-grid">
+            <div class="card" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+              <h3 itemprop="name">The University of Texas at Dallas</h3>
+              <p class="card-meta">Master&rsquo;s Degree, Computer &amp; Information Sciences &middot; 2016&ndash;2018</p>
+              <p><b>Coursework:</b> Machine Learning, Database Design, Statistical Methods for Data Science, Design &amp; Analysis of Algorithms, Artificial Intelligence, Big Data</p>
+              <p><b>Activities:</b> CS Outreach Instructor, Data Science Club</p>
+            </div>
 
-</p>  </div>
+            <div class="card" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+              <h3 itemprop="name">Vel Tech Rangarajan Dr. Sagunthala R&amp;D Institute of Science &amp; Technology</h3>
+              <p class="card-meta">B.Tech, Computer Science &middot; 2009&ndash;2013 &middot; 8.56 / 10.0</p>
+              <p><b>Coursework:</b> Data Structures &amp; Algorithms, Operating Systems, Databases, Distributed Computing, Software Engineering</p>
+              <p><b>Activities:</b> President, Artificial Intelligence Club</p>
+            </div>
 
-     
-      <div class="resume-item">
-          <h3 class="resume-item-title"><a href="https://github.com/mohanakrishnavh/DavisBase">DavisBase - Low Level Database Project </a></h3>
-          <h4 class="resume-item-details">Java   &bull; Spring &mdash; 2017</h4>
-          <p class="resume-item-copy"> • Created rudimentary database engine that is loosely based on a hybrid between MySQL and SQLite called DavisBase.</p>
-          <p class="resume-item-copy"> • Implemented a file-per-table approach to physical storage and each table file will be subdivided into logical sections of fixed equal size call pages (512 bytes). </p>    
-      </div>
+            <div class="card" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+              <h3 itemprop="name">Udacity</h3>
+              <p class="card-meta">Machine Learning Nanodegree &middot; Dec 2017</p>
+            </div>
 
-      <div class="resume-item">
-          <h3 class="resume-item-title"><a href="https://mohanakrishnavh.github.io/">eWasteBin - Android App </a></h3>
-          <h4 class="resume-item-details">Android, Open Street Maps, Google Location API &bull; Spring &mdash; 2013</h4>
-          <p> • Developed a location based mobile application to effectively monitor the clearance of waste bins. </p>
-          <p> • Extended the functionality to monitor other projects carried out by Chennai Corporation. </p>
-          <p> • Built a tool for accessing Operational document and knowledgebase articles on the intranet. </p>     
-      </div>
+            <div class="card" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+              <h3 itemprop="name">Coursera</h3>
+              <p class="card-meta">Deep Learning Specialization &middot; Dec 2017</p>
+            </div>
+          </div>
+        </section>
+        <!-- end Education -->
 
+        <!-- begin Skills -->
+        <section class="content-section">
+          <div class="section-header"><h2>Skills</h2><span class="rule" aria-hidden="true"></span></div>
 
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Languages</h3>
+              <ul class="tag-row">
+                <li class="tag">Java</li><li class="tag">Python</li><li class="tag">TypeScript</li>
+                <li class="tag">JavaScript</li><li class="tag">C++</li><li class="tag">SQL</li><li class="tag">PHP</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>Frameworks &amp; Cloud</h3>
+              <ul class="tag-row">
+                <li class="tag">Spring Boot</li><li class="tag">React</li><li class="tag">Node.js</li>
+                <li class="tag">AWS</li><li class="tag">AWS CDK</li><li class="tag">Microservices</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>Machine Learning</h3>
+              <ul class="tag-row">
+                <li class="tag">TensorFlow</li><li class="tag">Scikit-Learn</li><li class="tag">NumPy</li>
+                <li class="tag">Pandas</li><li class="tag">NLP</li><li class="tag">Deep Learning</li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>Data &amp; Tools</h3>
+              <ul class="tag-row">
+                <li class="tag">Microsoft SQL Server</li><li class="tag">PL/SQL</li><li class="tag">MySQL</li>
+                <li class="tag">MongoDB</li><li class="tag">Git</li><li class="tag">ServiceNow</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- end Skills -->
 
-</section>
-      <!-- end Projects -->
-      
+        <!-- begin Projects -->
+        <section class="content-section">
+          <div class="section-header"><h2>Projects</h2><span class="rule" aria-hidden="true"></span></div>
 
-    <!-- begin Skills -->
-      <section class="content-section">
+          <div class="card-grid">
+            <div class="card">
+              <h3><a href="https://github.com/mohanakrishnavh/Morris-Variant-D">Morris Variant D</a></h3>
+              <p class="card-meta">Python &middot; 2017</p>
+              <p>A variant of Nine Men&rsquo;s Morris with a minimax static-estimation function, pruned via alpha&ndash;beta to cut game-tree evaluation time.</p>
+            </div>
+            <div class="card">
+              <h3><a href="https://github.com/mohanakrishnavh/Soccer-Match-Prediction">Predicting Winner of Soccer Match</a></h3>
+              <p class="card-meta">Python &middot; 2017</p>
+              <p>Predictive model for La Liga BBVA outcomes, comparing SVM, Na&iuml;ve Bayes, Logistic Regression, and k-NN &mdash; 62.5% accuracy.</p>
+            </div>
+            <div class="card">
+              <h3><a href="https://github.com/mohanakrishnavh/Text-Classification">Text Classification</a></h3>
+              <p class="card-meta">Python &middot; 2017</p>
+              <p>Naive Bayes and Logistic Regression spam classifiers; stop-word elimination lifted accuracy to 95.18%.</p>
+            </div>
+            <div class="card">
+              <h3><a href="https://github.com/mohanakrishnavh/K-Means-Clustering-for-Image-Compression">Image Compression</a></h3>
+              <p class="card-meta">Java &middot; 2017</p>
+              <p>K-means clustering for image compression, comparing compression rates across values of K.</p>
+            </div>
+            <div class="card">
+              <h3><a href="https://github.com/mohanakrishnavh/Library-Management-System">Library Management System</a></h3>
+              <p class="card-meta">Java, Swing, MySQL &middot; 2017</p>
+              <p>A librarian-facing app for borrower management, book search &amp; availability, loans, and fines.</p>
+            </div>
+            <div class="card">
+              <h3><a href="https://github.com/mohanakrishnavh/BiddingWebApplication">Bidding Web Application</a></h3>
+              <p class="card-meta">Java, JSP, MySQL, Hibernate &middot; 2016</p>
+              <p>An online auction and shopping site for buying and selling goods and services.</p>
+            </div>
+            <div class="card">
+              <h3><a href="https://github.com/mohanakrishnavh/DavisBase">DavisBase</a></h3>
+              <p class="card-meta">Java &middot; 2017</p>
+              <p>A rudimentary database engine between MySQL and SQLite, with file-per-table storage in fixed 512-byte pages.</p>
+            </div>
+            <div class="card">
+              <h3><a href="https://mohanakrishnavh.github.io/">eWasteBin</a></h3>
+              <p class="card-meta">Android, Open Street Maps &middot; 2013</p>
+              <p>A location-based app to monitor waste-bin clearance for the Corporation of Chennai.</p>
+            </div>
+          </div>
+        </section>
+        <!-- end Projects -->
 
-        <header class="section-header">
-          <h2>Skills</h2>
-        </header>
+      </main>
 
-        <div class="resume-item">
-          <h4 class="resume-item-details">Programming Languages</h4>
-          <p class="resume-item-copy">Java, Python, TypeScript, JavaScript, C++, SQL, PHP </p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Frameworks & Cloud</h4>
-          <p class="resume-item-copy">Spring Boot, React JS, Node.js, AWS (incl. CDK), Microservices </p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Machine Learning</h4>
-          <p class="resume-item-copy">Classification, Regression, Clustering, Neural Networks, Deep Learning, NLP, TensorFlow, Scikit-Learn, NumPy, Pandas </p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Database</h4>
-          <p class="resume-item-copy">Microsoft SQL Server, PL/SQL, MySQL, MongoDB (NoSQL) </p>
-        </div>
-
-        <div class="resume-item">
-          <h4 class="resume-item-details">Tools</h4>
-          <p class="resume-item-copy">Git, ServiceNow, Jupyter Notebook, Eclipse </p>
-        </div>
-
-      </section>
-      <!-- end Skills -->
-
-      
-      <!-- begin Experience -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Experience</h2>
-        </header>
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Microsoft</h3>
-          <h4 class="resume-item-details" itemprop="description">Senior Software Engineer &bull; Mar, 2025 &mdash; Present</h4>
-          <p class="resume-item-copy">Redmond, Washington &bull; Hybrid</p>
-        </div><!-- end of resume-item -->
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Microsoft</h3>
-          <h4 class="resume-item-details" itemprop="description">Software Engineer II &bull; Dec, 2023 &mdash; Mar, 2025</h4>
-          <p class="resume-item-copy">Redmond, Washington &bull; Hybrid</p>
-        </div><!-- end of resume-item -->
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Amazon</h3>
-          <h4 class="resume-item-details" itemprop="description">Software Development Engineer II &bull; Sep, 2022 &mdash; Nov, 2023</h4>
-          <ul class="resume-item-list">
-            <li> Designed, developed, implemented, tested, and documented large-scale, multi-tiered, distributed software applications, tools, systems, and services. </li>
-            <li> Translated functional requirements into robust, scalable, supportable solutions that work well within the overall system architecture. </li>
-            <li> Participated in the full development cycle, end-to-end, from design and implementation to testing, documentation, delivery, and maintenance. </li>
-            <li> Produced comprehensive and usable software documentation. </li>
-            <li> Evaluated and made decisions around the use of new or existing software products and tools. </li>
-            <li> Mentored junior development engineers. </li>
-          </ul>
-          <p class="resume-item-copy">Seattle, Washington &bull; Hybrid &bull; Java, AWS CDK, and other skills</p>
-        </div><!-- end of resume-item -->
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">McDonald's</h3>
-          <h4 class="resume-item-details" itemprop="description">Software Engineer II &bull; Jun, 2021 &mdash; Sep, 2022</h4>
-          <ul class="resume-item-list">
-            <li> Designed, developed, implemented, tested, and deployed Spring Boot-based microservices to McDonald's Global Mobile Application (GMA) as part of digital engineering initiatives. </li>
-            <li> Developed highly scalable, performant, and reliable cloud software solutions using Amazon Web Services (AWS). </li>
-            <li> Delivered quality products using software engineering best practices for the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations. </li>
-            <li> Built large-scale, high-performance systems in a complex, multi-tiered, distributed environment. </li>
-            <li> Mentored other software developers to maintain architectural vision and software quality. </li>
-          </ul>
-          <p class="resume-item-copy">Spring Boot, Java, AWS, and other skills</p>
-        </div><!-- end of resume-item -->
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Wayfair</h3>
-          <h4 class="resume-item-details" itemprop="description">Software Engineer &bull; Feb, 2019 &mdash; May, 2021</h4>
-          <ul class="resume-item-list">
-            <li> Designed, developed, and integrated applications using multiple technologies such as Java, PHP, SQL, and React JS. </li>
-            <li> Designed, implemented, and documented microservices to expose data to internal teams, moving Wayfair towards a nimble and decoupled SOA-style software architecture. </li>
-            <li> Participated in the full-stack, full lifecycle with an emphasis on middle-tier and back-end architecture. </li>
-            <li> Defined code test plans and performed unit, integration, and functional testing; analyzed business requirements and developed software architecture to meet business needs. </li>
-            <li> Utilized relational database design and SQL optimization. </li>
-            <li> Partnered with product managers and business stakeholders to drive the roadmap forward and shape how thousands of suppliers communicate with Wayfair's catalog services, tools, and agents. </li>
-          </ul>
-          <p class="resume-item-copy">Greater Boston Area &bull; On-site &bull; Spring Boot, PHP, and other skills</p>
-        </div><!-- end of resume-item -->
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Micro Focus</h3>
-          <h4 class="resume-item-details" itemprop="description">SDE Intern (Graduate), Machine Learning &bull; Jun, 2018 &mdash; Dec, 2018</h4>
-          <ul class="resume-item-list">
-            <li> Extracted data from Micro Focus Operation Orchestration tools and server logs to build the dataset from scratch. </li>
-            <li> Clustered workflows into sub-categories based on steps or operations in a workflow. </li>
-            <li> Applied supervised machine learning algorithms to classify workflows based on their steps, reducing the workflow execution error rate by 3%. </li>
-            <li> Worked with the R&D team to test the feasibility of converting workflows into a series of operations based on input natural language text. </li>
-          </ul>
-          <p class="resume-item-copy">Fort Collins, Colorado &bull; On-site</p>
-        </div><!-- end of resume-item -->
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Toovio</h3>
-          <h4 class="resume-item-details" itemprop="description">Machine Learning Engineer Intern &bull; Dec, 2017 &mdash; Apr, 2018</h4>
-          <ul class="resume-item-list">
-            <li> Gathered requirements, and designed, developed, and unit tested enhancements to Toovio's machine learning solutions. </li>
-            <li> Developed an interactive dashboard to perform real-time sentiment analysis on tweets based on customer-specific hashtags. </li>
-            <li> Improved the performance of an existing J48 decision tree model predicting customer offer acceptance by applying ensemble techniques. </li>
-          </ul>
-          <p class="resume-item-copy">Dallas-Fort Worth Metroplex &bull; Remote</p>
-        </div><!-- end of resume-item -->
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">The University of Texas at Dallas</h3>
-          <h4 class="resume-item-details" itemprop="description">Grader &bull; Sep, 2017 &mdash; Dec, 2017</h4>
-          <ul class="resume-item-list">
-            <li> Graded assignments and exams in a timely manner. </li>
-            <li> Administered test proctoring. </li>
-            <li> Maintained records of student scores and provided feedback to the instructor regarding student performance. </li>
-          </ul>
-        </div><!-- end of resume-item -->
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">The University of Texas at Dallas</h3>
-          <h4 class="resume-item-details" itemprop="description">Instructor at CS Outreach &bull; Aug, 2016 &mdash; Aug, 2017</h4>
-          <ul class="resume-item-list">
-            <li> CS Outreach is a community service program by UT Dallas to introduce computer programming to everyone. </li>
-            <li> Conducted coding workshops and camps for students and professionals. </li>
-            <li> Trained students in Scratch, Python, C++, HTML, CSS, and Java. </li>
-          </ul>
-        </div><!-- end of resume-item -->
-
-        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">Wipro Technologies Ltd.</h3>
-          <h4 class="resume-item-details" itemprop="description">Project Engineer &bull; Nov, 2013 &mdash; June 2016</h4>
-          <ul class="resume-item-list">
-            <li> Administered the MS SQL Server database environment – Error log, Backup, Recovery, SQL Agent Jobs, SSL Certificates, MS PKI Certificates, Upgrade, Cumulative Updates, High Availability. </li>
-            <li> Solved incidents, requests, and determined root cause for issues based on ITIL process. </li>
-            <li> Planned and coordinated the transition of database encryption from SSL Certificate to Microsoft Public Key Infrastructure for all servers running SQL Server 2008, 2008R2 & 2012. </li>
-    <li>Coordinated a team for service restoration during disaster recovery.</li>
-            <li> Successfully upgraded all the MS SQL Server 2008 & 2008R2 servers in the environment to MS SQL Server 2012. </li>
-            <li> Optimized database health check scripts to deliver reports in half the time. </li>
-            <li> Coordinated a team for service restoration during disaster recovery. </li>
-          </ul>
-          <!--p class="resume-item-copy">If you're going to copy paste markup, or edit it, just be sure to keep the appropriate classnames on your new elements for styling purposes.</p-->
-
-        </div><!-- end of resume-item -->
-    
-
-      <!-- begin Associations -->
-<!--       <section class="content-section">
-
-        <header class="section-header">
-          <h2>Courses Online</h2>
-        </header>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009">Machine Learning Engineer</a></h3>
-             
-          
-        </div>
-
-          <div class="resume-item">
-          <h3 class="resume-item-title"><a href="https://www.coursera.org/learn/big-data-introduction/home/welcome">Introduction to Big Data</a></h3>
-          
-        </div>      
-    
-    
-  
-      </section> -->
-      <!-- end Associations -->
-      
-
-        
       <!-- begin Print Social Links -->
       <section class="content-section print-only">
-
-        <header class="section-header">
-          <h2>Social Links</h2>
-        </header>
-
-        <div class="resume-item">
-        <!-- and guess where these are defined? Yup, you guessed it: the _config.yml file -->
-
-  <ul>
-
-    <!-- GitHub link -->
-    
-    <li><strong>Github</strong>: https://github.com/mohanakrishnavh</li>
-    
-
-    <!-- Twitter link -->
-    
-
-    <!-- Dribbble link -->
-    
-
-    <!-- Facebook link -->
-    
-
-    <!-- LinkedIn link -->
-    
-    <li><strong>LinkedIn</strong>: https://www.linkedin.com/in/mohanakrishnavh</li>
-    
-
-    <!-- Instagram link -->
-    
-
-    <!-- Website link -->
-    
-
-  </ul>
-
-
-        </div>
-
+        <div class="section-header"><h2>Social Links</h2></div>
+        <ul>
+          <li><strong>GitHub</strong>: https://github.com/mohanakrishnavh</li>
+          <li><strong>LinkedIn</strong>: https://www.linkedin.com/in/mohanakrishnavh</li>
+        </ul>
       </section>
       <!-- end Print Social Links -->
-      
 
       <footer class="page-footer">
-        <p class="footer-line">Made by Mohanakrishna. Fork me on <a href="https://github.com/mohanakrishnavh">GitHub</a>.</p>
+        <span>REV 2026.09 &middot; drafted by Mohanakrishna</span>
+        <a href="https://github.com/mohanakrishnavh">Fork on GitHub</a>
       </footer>
 
- </div>
+    </div>
 
   </body>
 
